@@ -1,88 +1,93 @@
-/* 用css写一个个人博客的html网页 */
-
-/* 设置全局样式 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* 设置字体 */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* 设置标题 */
-h1 {
-  text-align: center;
-  font-size: 36px;
-  color: white;
-  background-color: #333;
-  padding: 20px;
-}
-
-/* 设置导航栏 */
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #eee;
-}
-
-/* 设置导航栏链接 */
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* 设置导航栏链接悬停效果 */
-nav a:hover {
-  color: #999;
-}
-
-/* 设置文章列表 */
-ul {
-  list-style-type: none;
-}
-
-/* 设置文章列表项 */
-li {
-  border-bottom: 1px solid #eee;
-}
-
-/* 设置文章标题 */
-li h2 {
-  font-size: 24px;
-  padding: 10px;
-}
-
-/* 设置文章摘要 */
-li p {
-  font-size: 16px;
-  padding: 10px;
-}
-
-/* 设置文章链接 */
-li a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* 设置文章链接悬停效果 */
-li a:hover {
-  color: #999;
-}
-
-/* 设置底部栏 */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-}
-
-/* 设置底部栏文本 */
-footer p {
-  font-size: 14px;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的个人博客</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      color: #999;
+    }
+    main {
+      margin: 20px;
+    }
+    article {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    article h2 {
+      color: #333;
+      margin-top: 0;
+    }
+    article p {
+      color: #666;
+    }
+    article time {
+      color: #999;
+      font-size: 14px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>我的个人博客</h1>
+    <p>欢迎来到我的个人博客，这里是我分享我的想法和经验的地方。</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">关于我</a></li>
+      <li><a href="#">联系我</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <h2>为什么我要写博客</h2>
+      <time datetime="2023-04-18">2023年4月18日</time>
+      <p>写博客对我来说是一种记录和分享的方式。我喜欢把自己学到的东西或者感兴趣的话题写成文章，这样可以帮助我巩固知识，也可以和其他人交流和讨论。写博客也可以提高我的表达能力和思维能力，让我更清楚地知道自己想要说什么，怎么说才能让别人理解。</p>
+    </article>
+    <article>
+      <h2>我喜欢的技术主题</h2>
+      <time datetime="2023-04-18">2023年4月18日</time>
+      <p>我对技术方面的话题很感兴趣，尤其是和编程、网络、人工智能等相关的内容。我觉得技术是一种创造性的工作，可以让我们实现很多有趣和有用的功能。我也喜欢学习新的技术和工具，了解它们的原理和应用。我会在我的博客上分享一些我学习或者使用过的技术主题，希望能给大家带来一些启发和帮助。</p>
+    </article>
+  </main>
+  <footer>
+    <p>版权所有 &copy; 我的个人博客 2023</p>
+  </footer>
+</body>
+</html>
