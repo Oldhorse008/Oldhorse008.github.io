@@ -21,7 +21,7 @@
 title: LemonWhale的QQ空间
 email: gc20001203@163.com
 description: >- # this means to ignore newlines until "baseurl:"
-欢迎大家来到我的QQ空间
+  欢迎大家来到我的QQ空间
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 qq_username: Bojack
