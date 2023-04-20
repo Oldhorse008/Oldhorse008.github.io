@@ -18,6 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+source:      # 指定你的网站源文件的位置，一般是根目录
+collections: # 指定你的自定义集合，可以是文章或其他类型的内容
+  posts:     # 指定你的文章集合的名称，可以是任意名字，但要保持一致
+    output: true # 指定是否为每篇文章生成一个静态页面
+    permalink: /:collection/:year/:month/:day/:title.html # 指定文章的永久链接格式
+    _posts:   # 指定你的文章存放的文件夹，可以是任意名字，但要保持一致
+
+
 title: LemonWhale的QQ空间
 email: gc20001203@163.com
 description: >- # this means to ignore newlines until "baseurl:"

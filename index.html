@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>LemonWhale的QQ空间 | 欢迎来到我的QQ空间
+    </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .title {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* 设置导航栏的背景颜色和溢出隐藏 */
+        .navbar {
+            background-color: rgb(203, 212, 95);
+            overflow: auto;
+            height: 25px;
+        }
+
+        /* 设置导航栏中的链接样式 */
+        .navbar a {
+            font-size: 25px;
+            color: white;
+            float: none;
+            text-align: center;
+            padding: 50px 10px;
+            text-decoration: none;
+        }
+
+        .navbar a.small {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        /* 设置鼠标悬停时的链接样式 */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 设置当前激活的链接样式 */
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: rgb(255, 7, 7);
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: #333333;
+            border-top: 1px solid #ffffff;
+            padding: 10px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .footer a {
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="title">LemonWhale的QQ空间</div>
+        <div class="navbar">
+            <a class="small" href="about.html">About</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <img src="image/avatar.jpg" class="avatar">
+            <div class="name">LemonWhale</div>
+            <p>「 不必等待炬火。」</p>
+        </div>
+    </div>
+    <div class="content">
+        <ul>
+            {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <div class="container">
+            <p>联系我：邮箱：<a href="mailto:zhangsan@example.com">{{site.email}}</a> 电话：<a href="tel:123456789">123456789</a>
+            </p>
+            <p>关注我：微信：<a href="#">zhangsan</a> 微博：<a href="#">@张三</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
