@@ -5,6 +5,7 @@ permalink: /about/
 ---
 # LemonWhale
 这里是LemonWhale的私人博客，用来记录我的学习和进步。
+
 如果你能看到这个网页那我们就是有缘人，祝你学业有成，事业顺利，身体健康！
 
 
