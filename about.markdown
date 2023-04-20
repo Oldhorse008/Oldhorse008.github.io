@@ -10,7 +10,7 @@ permalink: /about/
 
 
 # 支持
-这个网页使用的主体来自于jekyll社区，以下是他们的网址：
+这个网页使用的主题来自于jekyll社区，以下是他们的网址：
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima)
 
