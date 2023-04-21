@@ -3,6 +3,7 @@ layout: post
 title: Tensorboard
 tags: 
 - Pytorch
+- 深度学习
 ---
 用处：**绘制训练图像**
 

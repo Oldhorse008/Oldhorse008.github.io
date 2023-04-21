@@ -3,6 +3,7 @@ layout: post
 title: Transform
 tags: 
 - Pytorch
+- 深度学习
 ---
 
 **导入和函数**
