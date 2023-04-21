@@ -34,10 +34,6 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
-    <!-- Post LaTex -->
-    <script src=“https://polyfill.io/v3/polyfill.min.js?features=es6”></script>
-    <script id=“MathJax-script” async src=“https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js”></script>
-
     <!-- Web App Manifest -->
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
 
@@ -72,4 +68,16 @@
     <!-- Google AdSense -->
     <script data-ad-client="ca-pub-6487568398225121" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- 引入MathJax的脚本 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$$', '$$']],
+                processEscapes: true
+            }
+        };
+    </script>
 </head>
