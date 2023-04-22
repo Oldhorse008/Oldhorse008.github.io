@@ -36,3 +36,8 @@ https://github.com/highlightjs/highlight.js（github源文件）
 
 - 修改了_config.yml中kramdown
 增加了gfm_emojis: true，使其可以渲染emoji表情，但是只可以粘贴使用
+
+- 修改了_config.yml中kramdown的 syntax_highlighter_opts
+  block:
+      line_numbers: false
+否则与highlight.js冲突，行号混乱
