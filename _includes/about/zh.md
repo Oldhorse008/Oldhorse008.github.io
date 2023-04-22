@@ -13,11 +13,11 @@
 # 修改
 1. 添加了头文件，使网站可以支持LaTeX公式的渲染
 
-```
-<!-- 引入MathJax的脚本 -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
-```
+    ```
+    <!-- 引入MathJax的脚本 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+    ```
 
 2. 添加了头文件，引入了highlight.js
 
