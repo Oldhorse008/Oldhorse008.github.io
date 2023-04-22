@@ -52,9 +52,8 @@ plugins: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM # use Github Flavored Markdown !important
+  gfm_emojis: true
   syntax_highlighter_opts:
-    gfm_emojis: true
-    disable : true
     span:
       line_numbers: false
     block:
