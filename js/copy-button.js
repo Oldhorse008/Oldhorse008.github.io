@@ -1,34 +1,34 @@
-// 遍历全文的pre标签，将其设置为相对定位relative
-[...document.getElementsByTagName("pre")].forEach(item => {
-  item.style.position = "relative";
-  // 创建一个复制按钮 document.createElement("button")，样式为绝对定位absolute到右上角【使用了子绝父相的定位】，点击按钮时将pre标签内code标签的innerText复制到剪贴板，同时按钮的innerHTML变为“复制成功”，1秒后恢复为“复制”
-  let copyButton = document.createElement("button")
-  copyButton.style.cssText = 'border-radius: 4px;position:absolute;right:10px;top:10px;cursor: pointer'
-  copyButton.innerHTML = "复制";
-  copyButton.onclick = function () {
-    let copyData = item.firstChild.innerText
-    copyToClipboard(copyData)
-    copyButton.innerHTML = "复制成功";
-    setTimeout(function () {
-      copyButton.innerHTML = "复制";
-    }, 1000);
-  }
-  // 将复制按钮添加到pre标签中 appendChild(copyButton)
-  item.appendChild(copyButton)
+$(function(){
+    //给每一串代码元素增加复制代码节点
+    let preList = $(".content pre");
+    for (let pre of preList) {
+        //给每个代码块增加上“复制代码”按钮
+        let btn = $("<span class=\"btn-pre-copy\" onclick='preCopy(this)'>复制代码</span>");
+        btn.prependTo(pre);
+    }
 });
-
-// js 复制到剪贴板
-function copyToClipboard(content) {
-  if (window.clipboardData) {
-    window.clipboardData.setData('text', content);
-  } else {
-    (function (content) {
-      document.oncopy = function (e) {
-        e.clipboardData.setData('text', content);
-        e.preventDefault();
-        document.oncopy = null;
-      }
-    })(content);
-    document.execCommand('Copy');
-  }
+ 
+/**
+    * 执行复制代码操作
+    * @param obj
+    */
+function preCopy(obj) {
+    //执行复制
+    let btn = $(obj);
+    let pre = btn.parent();
+    //为了实现复制功能。新增一个临时的textarea节点。使用他来复制内容
+    let temp = $("<textarea></textarea>");
+    //避免复制内容时把按钮文字也复制进去。先临时置空
+    btn.text("");
+    temp.text(pre.text());
+    temp.appendTo(pre);
+    temp.select();
+    document.execCommand("Copy");
+    temp.remove();
+    //修改按钮名
+    btn.text("复制成功");
+    //一定时间后吧按钮名改回来
+    setTimeout(()=> {
+        btn.text("复制代码");
+    },1500);
 }
