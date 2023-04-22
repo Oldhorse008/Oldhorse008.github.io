@@ -18,7 +18,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
     ```
-
+<br><br/>
 2. 添加了头文件，引入了highlight.js
 
     ```
@@ -37,7 +37,7 @@
 3. 修改了_config.yml中的高亮（highlighter）为none，将高亮器由rouge改为highlight.js
 
     此更改将自带的高亮无法高亮C语言代码，且会将'$''$'包括的LaTeX公式高亮使其无法正常渲染。
-<br/>
+<br><br/>
 4. 修改了头文件，使font-awesome由4.3.0改为6.0.0-beta2
     ```
     <!-- Custom Fonts -->
@@ -45,20 +45,21 @@
             type="text/css">
     ```
     原先的awesome4.3.0不支持哔哩哔哩、知乎等网站的图标引用。
-
+<br><br/>
 5. 修改了sns-links.html
 
     增加了哔哩哔哩的link，更改知乎图标，由原来的“知”更改为官方图标。
-
+<br><br/>
 6. 在_config.yml中增加了bilibili_username
 
     使网站可以显示哔哩哔哩的link。
-
+<br><br/>
 7. 修改了_config.yml中kramdown
 
     增加了gfm_emojis: true，使其可以渲染emoji表情，但是只可以粘贴使用
-
+<br><br/>
 8. 修改了_config.yml中kramdown的 syntax_highlighter_opts
 
     block:line_numbers: false   
     否则与highlight.js冲突，行号混乱
+<br><br/>
