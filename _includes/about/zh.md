@@ -37,7 +37,7 @@
 3. 修改了_config.yml中的高亮（highlighter）为none，将高亮器由rouge改为highlight.js
 
     此更改将自带的高亮无法高亮C语言代码，且会将'$''$'包括的LaTeX公式高亮使其无法正常渲染。
-<br>
+<br/>
 4. 修改了头文件，使font-awesome由4.3.0改为6.0.0-beta2
     ```
     <!-- Custom Fonts -->
