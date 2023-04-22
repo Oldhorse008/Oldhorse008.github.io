@@ -54,6 +54,7 @@ kramdown:
   input: GFM # use Github Flavored Markdown !important
   gfm_emojis: true
   syntax_highlighter_opts:
+    disabled: true
     span:
       line_numbers: false
     block:
