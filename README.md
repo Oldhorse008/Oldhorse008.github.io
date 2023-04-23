@@ -55,6 +55,7 @@
 7. 在代码块旁边增加了`copy`按钮
 
     (1) 增加了[copy-button.js](https://github.com/arronhunt/highlightjs-copy);
+    
     (2) 在`head.html`中引入了：
     ```
     <!-- 添加code复制按钮 -->
