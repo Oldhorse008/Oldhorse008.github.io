@@ -24,8 +24,8 @@
     <script>hljs.highlightAll();</script>
     ```
 
-    (2) 修改了`_config.yml`中的高亮（highlighter）为none，将高亮器由`rouge`改为`highlight.js`<br/>
-    详细使用方法可以参见[highlight.js文档]((http://highlight.cndoc.wiki/doc))<br/>
+    (2) 修改了`_config.yml`中的高亮（highlighter）为none，将高亮器由`rouge`改为`highlight.js`
+    详细使用方法可以参见[highlight.js文档]((http://highlight.cndoc.wiki/doc))
     
 3. 修改了头文件，使[font-awesome](https://fontawesome.com)由`4.3.0`改为`6.0.0-beta2`
     ```
@@ -33,29 +33,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet"
             type="text/css">
     ```
-    原先的awesome4.3.0不支持哔哩哔哩、知乎等网站的图标引用。<br/>
+    原先的awesome4.3.0不支持哔哩哔哩、知乎等网站的图标引用。
 
 4. 修改了`sns-links.html`
 
     (1) 在`sns-links.html`中添加了哔哩哔的图标，更改知乎图标，由原来的“知”更改为官方图标。
     (2) 在_config.yml中增加了`bilibili_username`
-    使网站可以显示哔哩哔哩的link。<br/>
+    使网站可以显示哔哩哔哩的link。
 
 5. 修改了`_config.yml`中`kramdown`
 
-    增加了`gfm_emojis: true`，使其可以渲染`emoji`表情，但是只可以粘贴使用<br/>
+    增加了`gfm_emojis: true`，使其可以渲染`emoji`表情，但是只可以粘贴使用
 
 6. 修改了`_config.yml`中kramdown的`syntax_highlighter_opts`
     ```
     block:
         line_numbers: false
     ```
-    否则与`highlight.js`冲突，行号混乱<br/>
+    否则与`highlight.js`冲突，行号混乱
 
 7. 在代码块旁边增加了`copy`按钮
 
     (1) 增加了[copy-button.js](https://github.com/arronhunt/highlightjs-copy);
-    
+
     (2) 在`head.html`中引入了：
     ```
     <!-- 添加code复制按钮 -->
