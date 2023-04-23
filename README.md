@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
     ```
 2. 更改`highlighter`由`rouge`为`highlight.js`
+
     (自带的高亮无法高亮C语言代码，且会将'$''$'包括的LaTeX公式高亮使其无法正常渲染。)
 
     (1) 引入[highlight.js]((https://github.com/highlightjs/highlight.js))
