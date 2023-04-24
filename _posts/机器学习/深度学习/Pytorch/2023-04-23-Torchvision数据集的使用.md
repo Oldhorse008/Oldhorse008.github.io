@@ -9,7 +9,7 @@ tags:
 
 地址：`PyTorch.org` -> `Docs` -> `torchvision` -> `Package Reference`
 
-`CIFAR` 图片分类的数据集
+`CIFAR10` 图片分类的数据集:32×32
 
 ```python
 import torchvision
