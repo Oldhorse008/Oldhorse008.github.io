@@ -8,15 +8,28 @@
     user-select: none;
 
     text-align: center;
-    color: #ccc;
-    border-right: 1px solid #CCC;
+    color: rgb(255, 255, 255);
+    border-right: 15px solid rgb(44, 44, 44);
     vertical-align: top;
-    padding-right: 5px;
-
+    padding-right: 50px;
     /* your custom style here */
+
 }
 
 /* for block of code */
 .hljs-ln-code {
-    padding-left: 1em;
+    padding-right: 50px;
+}
+
+/* lang */
+.hljs-lang {
+    background: rgb(44, 44, 44);
+    text-align: center;
+    color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

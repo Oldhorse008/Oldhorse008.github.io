@@ -70,3 +70,28 @@
     ```
 
 8. 删除了网易云跟帖的相关代码
+
+9. 添加了`highlight.js`的行号显示和语言显示
+
+    在`<head>`中添加了：
+```complaintext
+    <!-- 引入行号 -->
+    <script
+        src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+
+    <!-- 显示语言类型 -->
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-lang.js@latest/dist/highlightjs-lang.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        hljs.initLangOnLoad();
+    </script>
+
+    <!-- highlightjs-line-numbers -->
+    <link rel="stylesheet" href="{{ " /css/hljs-line-numbers.css" | prepend: site.baseurl }}">
+```
+    增加了`hljs-line-numbers.css`文件。
+    源文件地址：
+    [语言显示](https://github.com/wcoder/highlightjs-lang.js/blob/master/src/highlightjs-lang.js)
+    [行号显示](https://github.com/wcoder/highlightjs-line-numbers.js)
