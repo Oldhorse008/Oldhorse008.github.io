@@ -85,14 +85,14 @@
     <!-- 显示语言类型 -->
     <script src="https://cdn.jsdelivr.net/npm/highlightjs-lang.js@latest/dist/highlightjs-lang.min.js"></script>
 
+    <!-- highlightjs-line-numbers -->
+    <link rel="stylesheet" href="{{ " /css/hljs-line-numbers.css" | prepend: site.baseurl }}">
+
     <script>
         hljs.highlightAll();
         hljs.initLineNumbersOnLoad();
         hljs.initLangOnLoad();
     </script>
-
-    <!-- highlightjs-line-numbers -->
-    <link rel="stylesheet" href="{{ " /css/hljs-line-numbers.css" | prepend: site.baseurl }}">
 
     <!-- 添加code复制按钮 -->
     <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
