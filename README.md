@@ -74,7 +74,7 @@
 9. 添加了`highlight.js`的行号显示和语言显示
 
     在`<head>`中添加了：
-```complaintext
+```Complaintext
     <!-- 引入行号 -->
     <script
         src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>

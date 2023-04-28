@@ -9,7 +9,7 @@ tags:
 
 **导入和使用到的函数**
 
-```python
+```Python
 from torch.utils.tensorboard import SummaryWriter
 #SummaryWriter是一个实例
 
@@ -27,7 +27,7 @@ writer = SummaryWriter("logs")
 ⚠️ *add_scalar会保留以前的进程，导致画出来的图有问题*
 **解决方法**：删除之前的文件或者创建子进程
 
-```python
+```Python
 # 创建子进程的方法
 
 import multiprocessing

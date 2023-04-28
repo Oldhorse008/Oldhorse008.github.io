@@ -8,7 +8,7 @@ tags:
 
 **导入和函数**
 
-```python
+```Python
 # 作用：转化为TensorFlow数据类型
 from torchvision import transform
 
@@ -28,7 +28,7 @@ img = tensor_test(img_input)
 
 **\__call__**函数的使用
 
-```python
+```Python
 class person:
 	def __call__(self,name):
 		print("__call__"+"Hello"+name)
@@ -43,7 +43,7 @@ person.hello("ZhangSan")
 
 Totensor和Normalize的使用
 
-```python
+```Python
 # 转化为tensor格式
 trans_tensor = transform.Totensor()
 img_tensor = trans_tensor(img)
@@ -56,7 +56,7 @@ img_norm = trans_norm(img_tensor)
 
 Resize的使用
 
-```python
+```Python
 #输入为PIL image，返回值也是PIL
 trans_resize = transforms.Resize((512,512))
 img_resize = trans_resize(img)
@@ -64,7 +64,7 @@ img_resize = trans_resize(img)
 
 Compose的使用
 
-```python
+```Python
 trans_compose = transforms.Compose([trans_resize,trans_totensor])
 ```
 *Compose*中第一个参数的输出是第二个参数的输入，最后输出最后一个参数的输出。

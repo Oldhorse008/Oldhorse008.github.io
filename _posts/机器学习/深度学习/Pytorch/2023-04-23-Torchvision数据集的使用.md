@@ -10,6 +10,6 @@ tags:
 
 `CIFAR10` 图片分类的数据集:32×32
 
-```python
+```Python
 import torchvision
 ```
