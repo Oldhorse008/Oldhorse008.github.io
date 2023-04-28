@@ -22,7 +22,7 @@
 
     (自带的高亮无法高亮C语言代码，且会将'$''$'包括的LaTeX公式高亮使其无法正常渲染。)
 
-    (1) 引入[highlight.js]((https://github.com/highlightjs/highlight.js))
+    (1) 引入[highlight.js](https://github.com/highlightjs/highlight.js)
     ```
     <!-- 引入highlight.js库 -->
     <link rel="stylesheet"
@@ -31,7 +31,7 @@
     <script>hljs.highlightAll();</script>
     ```
     (2) 修改了`_config.yml`中的高亮（highlighter）为none，将高亮器由`rouge`改为`highlight.js`
-    详细使用方法可以参见[highlight.js文档]((http://highlight.cndoc.wiki/doc))
+    详细使用方法可以参见[highlight.js文档](http://highlight.cndoc.wiki/doc)
     <br><br/>
 3. 修改了头文件，使[font-awesome](https://fontawesome.com)由`4.3.0`改为`6.0.0-beta2`
     ```
