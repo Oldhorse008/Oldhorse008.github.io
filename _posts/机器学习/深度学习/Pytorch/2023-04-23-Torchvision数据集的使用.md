@@ -109,8 +109,10 @@ class module(nn.Module):
                                     nn.Conv2d(32, 32, 5, padding=2),
                                     nn.MaxPool2d(2, stride=2),
                                     nn.Conv2d(32, 64, 5, padding=2),
-                                    nn.MaxPool2d(2, stride=2), nn.Flatten(),
-                                    nn.Linear(1024, 64), nn.Linear(64, 10))
+                                    nn.MaxPool2d(2, stride=2), 
+                                    nn.Flatten(),
+                                    nn.Linear(1024, 64),
+                                    nn.Linear(64, 10))
 
     def forward(self, input):
         output = self.model1(input)
