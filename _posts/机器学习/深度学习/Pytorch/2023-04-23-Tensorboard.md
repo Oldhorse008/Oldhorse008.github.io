@@ -25,6 +25,7 @@ writer = SummaryWriter("logs")
 ```
 
 ⚠️ *add_scalar会保留以前的进程，导致画出来的图有问题*
+
 **解决方法**：删除之前的文件或者创建子进程
 
 ```Python
