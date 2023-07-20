@@ -37,7 +37,7 @@
 
 4. 修改了`sns-links.html`
 
-    (1) 在`sns-links.html`中添加了哔哩哔的图标，更改知乎图标，由原来的“知”更改为官方图标。
+    (1) 在`sns-links.html`中添加了哔哩哔哩的图标，更改知乎图标，由原来的“知”更改为官方图标。
     
     (2) 在_config.yml中增加了`bilibili_username`
     使网站可以显示哔哩哔哩的link。
