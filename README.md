@@ -54,21 +54,13 @@
     否则与`highlight.js`冲突，行号混乱
 
 7. 在代码块旁边增加了`copy`按钮
-
-    (1) 增加了[copy-button.js](https://github.com/arronhunt/highlightjs-copy);
-
-    (2) 在`head.html`中引入了：
-    ```
-    <!-- 添加code复制按钮 -->
-    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
-    <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
-    ```
-    (3) 在`post.html`中引入了：
-    ```    
-    <!-- 加入复制按钮 -->
-    <script src="/js/copy-button.js"></script>
-    ```
-
+    在头文件中加入了[以下代码](https://github.com/semaz/highlightjs-copy-button.js)：
+    ```<!-- 加入复制按钮 -->
+        <script src="/js/highlightjs-copy-button.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+            hljs.initCopyButtonOnLoad();
+        </script>```
 8. 删除了网易云跟帖的相关代码
 
 9. 添加了`highlight.js`的行号显示和语言显示
