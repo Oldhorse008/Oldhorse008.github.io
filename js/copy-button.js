@@ -13,3 +13,4 @@ hljs.addPlugin(
     },
   })
 );
+hljs.highlightAll();
