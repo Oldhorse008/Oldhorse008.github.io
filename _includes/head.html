@@ -91,10 +91,17 @@
     <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
 
-    <!-- 加入复制按钮 -->
+    <!-- 高亮代码 -->
     <script>
         hljs.highlightAll();
         hljs.initLineNumbersOnLoad();
         hljs.initLangOnLoad();
+    </script>
+
+    <!-- 加入复制按钮 -->
+    <script src="/js/highlightjs-copy-button.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.initCopyButtonOnLoad();
     </script>
 </head>
