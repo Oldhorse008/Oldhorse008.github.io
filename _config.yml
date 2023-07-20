@@ -23,7 +23,7 @@ github_username: Oldhorse008
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: none
+highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude:
@@ -53,12 +53,12 @@ markdown: kramdown
 kramdown:
   input: GFM # use Github Flavored Markdown !important
   gfm_emojis: true
-  # syntax_highlighter_opts:
-  #   span:
-  #     line_numbers: false
-  #   block:
-  #     line_numbers: false
-  #     start_line: 1
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 
 # Disqus settings
 # disqus_username: LemonWhale
