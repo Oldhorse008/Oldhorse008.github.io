@@ -88,17 +88,17 @@
     <script src="https://cdn.jsdelivr.net/npm/highlightjs-lang.js@latest/dist/highlightjs-lang.min.js"></script>
 
     <script>
-        hljs.highlightAll();
         hljs.initLineNumbersOnLoad();
         hljs.initLangOnLoad();
     </script>
 
     <!-- 添加code复制按钮 -->
-    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
     <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
 
     加入复制按钮
     <script>
+        hljs.highlightAll();
         hljs.addPlugin(new CopyButtonPlugin());
     </script>
 </head>
