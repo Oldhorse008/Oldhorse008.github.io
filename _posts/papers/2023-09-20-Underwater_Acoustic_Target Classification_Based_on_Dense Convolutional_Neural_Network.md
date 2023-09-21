@@ -8,7 +8,7 @@ tags:
   - underwater_acoustic
   - CNN
 ---
-## [文章来源](https://ieeexplore.ieee.org/document/9229102)
+## [文章来源](https://ieeexplore.ieee.org/document/9229102 "Underwater Acoustic Target Classification Based on Dense Convolutional Neural Network")
 IEEE Geoscience and Remote Sensing Letters
 
 ## 摘要
